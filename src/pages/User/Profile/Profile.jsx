@@ -193,7 +193,10 @@ export default function Profile() {
         <S.ProfileRight>
           <S.AvatarUploader>
             <S.Avatar>
-              <img src="https://cf.shopee.vn/file/85d817bcc50bf0e848608f473f893ce2" alt="" />
+              <img
+                src="https://png.pngtree.com/png-vector/20190223/ourlarge/pngtree-profile-line-black-icon-png-image_691051.jpg"
+                alt=""
+              />
             </S.Avatar>
             <S.InputFile type="file" accept=".jpg, .png, .jpeg" />
             <S.ButtonUpload light>Chọn ảnh</S.ButtonUpload>

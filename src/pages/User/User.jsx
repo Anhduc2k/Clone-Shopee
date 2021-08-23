@@ -11,7 +11,10 @@ export default function User() {
       <S.Sidebar>
         <S.Brief>
           <S.BriefAvatar to={path.profile}>
-            <img src="https://cf.shopee.vn/file/85d817bcc50bf0e848608f473f893ce2_tn" alt="" />
+            <img
+              src="https://png.pngtree.com/png-vector/20190223/ourlarge/pngtree-profile-line-black-icon-png-image_691051.jpg"
+              alt=""
+            />
           </S.BriefAvatar>
           <S.BriefRight>
             <S.BriefUsername>EngGer</S.BriefUsername>

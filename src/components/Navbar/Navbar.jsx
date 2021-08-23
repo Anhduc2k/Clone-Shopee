@@ -18,7 +18,7 @@ export default function Navbar() {
         {authenticated && (
           <li>
             <S.User onMouseEnter={showPopover} onMouseLeave={hidePopover}>
-              <S.UserImage src="https://cf.shopee.vn/file/85d817bcc50bf0e848608f473f893ce2_tn" />
+              <S.UserImage src="https://png.pngtree.com/png-vector/20190223/ourlarge/pngtree-profile-line-black-icon-png-image_691051.jpg" />
               <S.UserName>{profile.name || profile.email}</S.UserName>
               {activePopover && (
                 <Popover active={activePopover}>
