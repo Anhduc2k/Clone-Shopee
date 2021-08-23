@@ -5,7 +5,9 @@ import Profile from './Profile/Profile';
 import Password from './Password/Password';
 import Purchase from './Purchase/Purchase';
 import * as S from './user.style';
+import { useSelector } from 'react-redux';
 export default function User() {
+  const profile = useSelector(state => state.auth.profile);
   return (
     <S.Container className="container">
       <S.Sidebar>
@@ -17,7 +19,7 @@ export default function User() {
             />
           </S.BriefAvatar>
           <S.BriefRight>
-            <S.BriefUsername>EngGer</S.BriefUsername>
+            <S.BriefUsername>{profile.name || profile.email}</S.BriefUsername>
             <S.BriefEdit to={path.profile}>
               <svg
                 width={12}
