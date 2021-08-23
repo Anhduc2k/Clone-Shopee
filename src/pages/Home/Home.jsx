@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <div>
       <Helmet>
-        <title>EngGerShop | Mua và Bán trên ứng dụng di động hoặc website</title>
+        <title>EngGer Shop | Mua và Bán trên ứng dụng di động hoặc website</title>
       </Helmet>
       <S.Container className="container">
         <S.Side>

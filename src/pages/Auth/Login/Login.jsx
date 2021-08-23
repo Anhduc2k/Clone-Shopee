@@ -95,7 +95,7 @@ export default function Login() {
             </S.FormButton>
           </S.Form>
           <S.FormFooter>
-            <span>Bạn mới biết đến EngGer?</span>
+            <span>Bạn mới biết đến EngGer Shop?</span>
             <Link to={path.register} className="link">
               Đăng ký
             </Link>
