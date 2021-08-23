@@ -51,7 +51,7 @@ export default function Login() {
   return (
     <S.StyledRegister>
       <Helmet>
-        <title>Đăng nhập</title>
+        <title> Đăng nhập</title>
       </Helmet>
       <S.Banner>
         <S.FormWrapper>
