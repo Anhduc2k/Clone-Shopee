@@ -72,31 +72,26 @@ export default function Cart() {
   };
 
   const handleIncreaseAndDecrease = indexPurchase => async value => {
-    try {
-      const purchase = localPurchases[indexPurchase];
-      setLocalPurchases(localPurchases =>
-        createNextState(localPurchases, draft => {
-          draft[indexPurchase].disabled = true;
-          draft[indexPurchase].buy_count = value;
-        })
-      );
-      await dispatch(
-        updatePurchase({
-          product_id: purchase.product._id,
-          buy_count: value
-        })
-      ).then(unwrapResult);
-      await dispatch(getCartPurchases()).then(unwrapResult);
-      setLocalPurchases(localPurchases =>
-        createNextState(localPurchases, draft => {
-          draft[indexPurchase].disabled = false;
-        })
-      );
-    } catch (error) {
-      console.log(error.message);
-    }
+    const purchase = localPurchases[indexPurchase];
+    setLocalPurchases(localPurchases =>
+      createNextState(localPurchases, draft => {
+        draft[indexPurchase].disabled = true;
+        draft[indexPurchase].buy_count = value;
+      })
+    );
+    await dispatch(
+      updatePurchase({
+        product_id: purchase.product._id,
+        buy_count: value
+      })
+    ).then(unwrapResult);
+    await dispatch(getCartPurchases()).then(unwrapResult);
+    setLocalPurchases(localPurchases =>
+      createNextState(localPurchases, draft => {
+        draft[indexPurchase].disabled = false;
+      })
+    );
   };
-
   const handleCheck = indexPurchase => value => {
     setLocalPurchases(localPurchases =>
       createNextState(localPurchases, draft => {
