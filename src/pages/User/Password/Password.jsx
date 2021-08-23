@@ -51,7 +51,7 @@ export default function Password() {
   return (
     <S.Profile>
       <Helmet>
-        <title>Đổi mật khẩu</title>
+        <title>Đổi Mật Khẩu</title>
       </Helmet>
       <S.ProfileHeader>
         <S.ProfileHeaderTitle>Đổi mật khẩu</S.ProfileHeaderTitle>

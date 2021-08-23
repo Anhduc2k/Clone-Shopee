@@ -60,7 +60,7 @@ export default function Profile() {
   return (
     <S.Profile>
       <Helmet>
-        <title> Hồ sơ của tôi</title>
+        <title> My profile</title>
       </Helmet>
       <S.ProfileHeader>
         Hồ sơ của tôi

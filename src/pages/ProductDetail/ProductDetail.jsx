@@ -135,7 +135,7 @@ export default function ProductDetail() {
                 <S.ProductPriceOriginal>đ{formatMoney(product.price_before_discount)}</S.ProductPriceOriginal>
                 <S.ProductPriceSale>đ{formatMoney(product.price)}</S.ProductPriceSale>
                 <S.ProductPriceSalePercent>
-                  {rateSale(product.price_before_discount, product.price)} giảm
+                  {rateSale(product.price_before_discount, product.price)} Giảm
                 </S.ProductPriceSalePercent>
               </S.ProductPrice>
               <S.ProductBuyQuantity>

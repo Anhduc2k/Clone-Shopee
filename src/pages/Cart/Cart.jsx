@@ -152,7 +152,7 @@ export default function Cart() {
   return (
     <div className="container">
       <Helmet>
-        <title>Giỏ hàng</title>
+        <title>Giỏ hàng của bạn</title>
       </Helmet>
       <div>
         <S.ProductHeader>
