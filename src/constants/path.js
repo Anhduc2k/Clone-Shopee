@@ -1,5 +1,4 @@
-// const USER = '/user'
-
+// const User = '/user'
 // export const path = {
 //   home: '/',
 //   login: '/login',
@@ -7,8 +6,8 @@
 //   product: '/product',
 //   productDetail: '/product/:idProduct',
 //   cart: '/cart',
-//   user: USER,
-//   profile: USER + '/profile',
+//   user: User,
+//   profile: User + '/profile',
 //   get password() {
 //     return this.user + '/password'
 //   },
@@ -17,7 +16,6 @@
 //   },
 //   notFound: '*'
 // }
-
 class Path {
   constructor() {
     this.home = '/';
