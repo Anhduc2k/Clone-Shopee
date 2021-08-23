@@ -21,7 +21,7 @@ export default class ErrorBoundary extends React.Component {
       return (
         <h1>
           Something went wrong.
-          <Link to={path.home}>Click To Home Page</Link>
+          <Link to={path.home}>Click To Return Home Page</Link>
         </h1>
       );
     }

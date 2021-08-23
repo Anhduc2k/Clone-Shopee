@@ -9,12 +9,12 @@ import CartLayout from './layouts/CartLayout/CartLayout';
 import Fallback from './components/Fallback/Fallback';
 import ErrorBoundary from './components/ErrorBoundary/errorBoundary';
 
-const Home = lazy(() => import('./pages/Home/Home'));
-const ProductDetail = lazy(() => import('./pages/ProductDetail/ProductDetail'));
-const User = lazy(() => import('./pages/User/User'));
-const Cart = lazy(() => import('./pages/Cart/Cart'));
 const Register = lazy(() => import('./pages/Auth/Register/Register'));
 const Login = lazy(() => import('./pages/Auth/Login/Login'));
+const Home = lazy(() => import('./pages/Home/Home'));
+const Cart = lazy(() => import('./pages/Cart/Cart'));
+const ProductDetail = lazy(() => import('./pages/ProductDetail/ProductDetail'));
+const User = lazy(() => import('./pages/User/User'));
 const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
 
 export default function Routes() {
